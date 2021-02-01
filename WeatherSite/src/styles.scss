@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html, body {
+	// Dark theme
+	background-color: rgb(26, 26, 27);
+	color: white;
+
+	// Clean font
+	font-family: 'Open Sans', sans-serif;
+
+	height: 100vh;
+	width: 100vw;
+	
+	padding: 0;
+	margin: 0;
+
+	overflow: hidden;
+}
+
+// Not a great idea, but works for this project
+h1,h2,h3,h4,h5,p {
+	font-weight: normal;
+	margin: 0;
+}

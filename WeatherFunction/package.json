@@ -1,0 +1,20 @@
+{
+	"name": "weatherfunction",
+	"version": "0.0.0",
+	"description": "Weather API",
+	"main": "dist/index.js",
+	"private": true,
+	"scripts": {
+		"build-tsc": "tsc",
+		"bundle": "powershell.exe Compress-Archive -Force -Path ./dist -DestinationPath ./bundle.zip && powershell.exe Compress-Archive -Update -Path ./node_modules -DestinationPath ./bundle.zip",
+		"build": "npm run build-tsc && npm run bundle"
+	},
+	"author": "Tucker Sneed",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^14.14.22"
+	},
+	"dependencies": {
+		"axios": "^0.21.1"
+	}
+}

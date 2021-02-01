@@ -1,0 +1,4 @@
+dist/*
+!dist/.gitkeep
+bundle.zip
+node_modules/
